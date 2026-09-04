@@ -1,0 +1,75 @@
+generated: '2026-09-04'
+method: probed
+source: >-
+  Direct HTTPS probes of the RFC 8615 named path list on every host this record knows
+  (voltserver.com and www.voltserver.com). VoltServer publishes no API baseURL and no
+  OpenAPI servers[] block, so there is no third host to probe.
+note: >-
+  Every named path returned 404 on both hosts. Two 404 shapes were observed: an nginx
+  404 (548-byte text/html) for file-shaped paths, and the WordPress theme's own 404 page
+  (73,868-byte HTML) for extensionless paths — the latter is an HTML shell, not a
+  document, and is recorded as a miss. NO WellKnown / SecurityTxt / APICatalog pointer is
+  emitted in apis.yml, because this file records an absence, not a presence.
+hosts:
+  - host: voltserver.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+        note: WordPress 404 template returned as HTML; not a document.
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+        note: WordPress 404 template returned as HTML; not a document.
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+        note: WordPress 404 template returned as HTML; not a document.
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+        note: WordPress 404 template returned as HTML; not a document.
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null
+  - host: www.voltserver.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/aauth-resource.json
+        status: 404
+        file: null

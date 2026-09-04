@@ -1,23 +1,117 @@
 aid: voltserver
 name: VoltServer
-description: 'VoltServer is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: |
+  VoltServer, Inc. (East Greenwich, Rhode Island, with VoltServer Ltd in Tadley, UK) is the inventor
+  and manufacturer of Digital Electricity, a Class 4 fault-managed power distribution technology.
+  Digital Electricity breaks conventional power into short, digitally analyzed energy packets that are
+  transmitted over Class 2/Class 4 cabling and reconstituted to AC or DC at a receiver, delivering
+  kilowatt-scale power over long distances at the installation cost and safety profile of low-voltage
+  wiring. Products are hardware: Digital Electricity transmitters (TXAC family) and receivers (RXDC,
+  RXAC, TETRA families), sold into service-provider networks, data centers, smart buildings and
+  campuses, industrial and manufacturing sites, building electrification and transportation networks.
+  VoltServer's published software surface consists of two downloadable end-user utilities — the
+  VoltServer Site Tech App (Windows) and the VoltServer Discovery Tool (macOS) — for commissioning and
+  discovering deployed devices. As of the 2026-09-04 probe VoltServer publishes no public API,
+  developer portal, machine-readable specification, SDK or webhook surface.
 url: https://raw.githubusercontent.com/api-evangelist/voltserver/refs/heads/main/apis.yml
+humanURL: https://voltserver.com
+image: https://voltserver.com/wp-content/uploads/2021/02/Voltserver_Logo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-04'
 modified: '2026-09-04'
 tags:
-- Company
+  - Company
+  - Power Distribution
+  - Fault Managed Power
+  - Digital Electricity
+  - Class 4 Power
+  - Electrical
+  - Hardware
+  - Data-Center
+  - Building
+  - Energy
+tags_raw:
+  - Company
+  - Power Distribution
+  - Fault Managed Power
+  - Digital Electricity
+  - Class 4 Power
+  - Electrical
+  - Hardware
+  - Data Center
+  - Building
+  - Energy
 apis: []
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 common:
-- type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  - type: DomainSecurity
+    url: security/voltserver-domain-security.yml
+  - type: LLMsTxt
+    url: llms/voltserver-llms.txt
+  - type: Website
+    url: https://voltserver.com
+  - type: Support
+    url: https://voltserver.com/support/
+  - type: Blog
+    url: https://voltserver.com/news/
+  - type: BlogRSS
+    url: https://voltserver.com/feed/
+  - type: GitHubOrganization
+    url: https://github.com/VoltServer
+  - type: TermsOfService
+    url: https://voltserver.com/terms-of-use/
+  - type: PrivacyPolicy
+    url: https://voltserver.com/privacy-policy/
+  - type: Tools
+    url: https://voltserver.com/support/software/
+  - type: Solutions
+    url: https://voltserver.com/solutions/
+  - type: About
+    url: https://voltserver.com/company/
+  - type: Partners
+    url: https://voltserver.com/partners/
+  - type: CaseStudies
+    url: https://voltserver.com/resources/case-studies/
+  - type: ContactUs
+    url: https://voltserver.com/sales-support/
+  - type: InvestorRelations
+    url: https://voltserver.com/investors/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/voltserver/
+  - type: YouTube
+    url: https://www.youtube.com/channel/UCzpGyIlBXwD3l8PNRjFj4sw
+  - type: Instagram
+    url: https://www.instagram.com/voltserver
+
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    VoltServer is a Class 4 fault-managed power hardware manufacturer whose entire published
+    software surface is two downloadable technician utilities on /support/software/ — a Windows
+    Site Tech App and a macOS Discovery Tool, both last released in June 2023 — with no developer
+    portal, no API reference, no spec, and no api/docs/developer subdomain in DNS.
+  evidence:
+    - url: https://voltserver.com/support/software/
+      status: 200
+    - url: https://voltserver.com/openapi.json
+      status: 404
+    - url: https://voltserver.com/.well-known/api-catalog
+      status: 404
+    - url: https://voltserver.com/llms.txt
+      status: 404
+    - url: https://voltserver.com/page-sitemap.xml
+      status: 200
+  checked: '2026-09-04'

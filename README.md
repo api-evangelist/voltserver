@@ -64,5 +64,31 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-VoltServer is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+VoltServer, Inc. (East Greenwich, Rhode Island, with VoltServer Ltd in Tadley, UK) is the inventor and
+manufacturer of **Digital Electricity**, a Class 4 fault-managed power distribution technology.
+Digital Electricity breaks conventional power into short, digitally analyzed energy packets sent over
+Class 2/Class 4 cabling and reconstituted to AC or DC at a receiver — kilowatt-scale power over long
+distances at the installation cost and safety profile of low-voltage wiring. The product line is
+hardware: Digital Electricity transmitters (TXAC family) and receivers (RXDC, RXAC, TETRA families),
+sold into service-provider networks, data centers, smart buildings and campuses, industrial and
+manufacturing sites, building electrification and transportation networks.
+
+## API surface
+
+**As of the 2026-09-04 enrichment probe, VoltServer publishes no public API.** There is no developer
+portal, no API reference, no machine-readable specification (OpenAPI, AsyncAPI, GraphQL SDL, Postman
+collection or JSON Schema), no SDK in any public package registry, no webhook surface and no MCP
+server. No `api.`, `docs.`, `developer.`, `portal.`, `app.` or `cloud.` subdomain resolves in DNS, and
+every RFC 8615 `/.well-known/` path probed returned 404 on both `voltserver.com` and
+`www.voltserver.com` (see `well-known/voltserver-well-known.yml`).
+
+VoltServer's published software surface is two downloadable end-user utilities on
+<https://voltserver.com/support/software/> — the VoltServer Site Tech App (Windows, v2.6.0,
+2023-06-07) and the VoltServer Discovery Tool (macOS, v1.7.0, 2023-06-01). Its GitHub organization,
+<https://github.com/VoltServer>, holds 18 public repositories, 15 of them forks of third-party
+embedded and tooling projects; the three VoltServer-authored repositories (`UL1400-1_analyzer`,
+`uboot-bootcount`, `u-boot`) are firmware and compliance-analysis tooling, not client libraries.
+
+This is recorded in `apis.yml` as `x-coverage: {state: none, reason: no-developer-program}`.
+
+- <https://voltserver.com>
