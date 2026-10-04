@@ -29,7 +29,7 @@ tags:
   - Class 4 Power
   - Electrical
   - Hardware
-  - Data-Center
+  - Data Center
   - Buildings
   - Energy
 tags_raw:
@@ -43,6 +43,7 @@ tags_raw:
   - Data Center
   - Building
   - Energy
+  - Data-Center
 apis: []
 maintainers:
   - FN: Kin Lane
