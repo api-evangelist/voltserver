@@ -64,31 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-VoltServer, Inc. (East Greenwich, Rhode Island, with VoltServer Ltd in Tadley, UK) is the inventor and
-manufacturer of **Digital Electricity**, a Class 4 fault-managed power distribution technology.
-Digital Electricity breaks conventional power into short, digitally analyzed energy packets sent over
-Class 2/Class 4 cabling and reconstituted to AC or DC at a receiver — kilowatt-scale power over long
-distances at the installation cost and safety profile of low-voltage wiring. The product line is
-hardware: Digital Electricity transmitters (TXAC family) and receivers (RXDC, RXAC, TETRA families),
-sold into service-provider networks, data centers, smart buildings and campuses, industrial and
-manufacturing sites, building electrification and transportation networks.
+VoltServer, Inc. (East Greenwich, Rhode Island, with VoltServer Ltd in Tadley, UK) is the inventor and manufacturer of Digital Electricity, a Class 4 fault-managed power distribution technology. Digital Electricity breaks conventional power into short, digitally analyzed energy packets that are transmitted over Class 2/Class 4 cabling and reconstituted to AC or DC at a receiver, delivering kilowatt-scale power over long distances at the installation cost and safety profile of low-voltage wiring. Products are hardware: Digital Electricity transmitters (TXAC family) and receivers (RXDC, RXAC, TETRA families), sold into service-provider networks, data centers, smart buildings and campuses, industrial and manufacturing sites, building electrification and transportation networks. VoltServer's published software surface consists of two downloadable end-user utilities — the VoltServer Site Tech App (Windows) and the VoltServer Discovery Tool (macOS) — for commissioning and discovering deployed devices. As of the 2026-09-04 probe VoltServer publishes no public API, developer portal, machine-readable specification, SDK or webhook surface.
 
-## API surface
+**Areas:** Company · Power Distribution · Fault Managed Power · Digital Electricity · Class 4 Power · Electrical · Hardware · Data Center · Buildings · Energy
 
-**As of the 2026-09-04 enrichment probe, VoltServer publishes no public API.** There is no developer
-portal, no API reference, no machine-readable specification (OpenAPI, AsyncAPI, GraphQL SDL, Postman
-collection or JSON Schema), no SDK in any public package registry, no webhook surface and no MCP
-server. No `api.`, `docs.`, `developer.`, `portal.`, `app.` or `cloud.` subdomain resolves in DNS, and
-every RFC 8615 `/.well-known/` path probed returned 404 on both `voltserver.com` and
-`www.voltserver.com` (see `well-known/voltserver-well-known.yml`).
+## VoltServer on APIs.io
 
-VoltServer's published software surface is two downloadable end-user utilities on
-<https://voltserver.com/support/software/> — the VoltServer Site Tech App (Windows, v2.6.0,
-2023-06-07) and the VoltServer Discovery Tool (macOS, v1.7.0, 2023-06-01). Its GitHub organization,
-<https://github.com/VoltServer>, holds 18 public repositories, 15 of them forks of third-party
-embedded and tooling projects; the three VoltServer-authored repositories (`UL1400-1_analyzer`,
-`uboot-bootcount`, `u-boot`) are firmware and compliance-analysis tooling, not client libraries.
+Everything profiled for VoltServer is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/voltserver/](https://apis.io/providers/voltserver/)** — or go straight to one of the APIs or properties below.
 
-This is recorded in `apis.yml` as `x-coverage: {state: none, reason: no-developer-program}`.
+### Published properties
 
-- <https://voltserver.com>
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Voltserver Domain Security](https://apis.io/security/voltserver/voltserver-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://voltserver.com)
+- [Support](https://voltserver.com/support/)
+- [Blog](https://voltserver.com/news/)
+- [Terms of service](https://voltserver.com/terms-of-use/)
+- [Privacy policy](https://voltserver.com/privacy-policy/)
+- [GitHub](https://github.com/VoltServer)
+
+## API Evangelist rating
+
+**Kin Score 10.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/voltserver/](https://apis.io/providers/voltserver/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for VoltServer: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/voltserver/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
